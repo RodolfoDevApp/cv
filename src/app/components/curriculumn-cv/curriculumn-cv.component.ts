@@ -52,7 +52,7 @@ export class CurriculumnCvComponent {
     for (let i = 1; i <= pageCount; i++) {
       pdf.setPage(i);
       pdf.setFontSize(10);
-      pdf.text(`Page ${i} of ${pageCount}`, pdf.internal.pageSize.getWidth() - 50, pdf.internal.pageSize.getHeight() - 10);
+      pdf.text(`need an other language? -> https://rodolfodevapp.github.io/cv/#/cv`, pdf.internal.pageSize.getWidth() - 50, pdf.internal.pageSize.getHeight() - 10);
     }
 
     pdf.save('cvMarban.pdf');
