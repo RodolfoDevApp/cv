@@ -1,0 +1,25 @@
+<nav class="navbar" [ngClass]="{'windows98': isWindows98Theme, 'nintendo': isNintendoTheme}">
+  <div class="nav-container">
+    <app-generic-select (optionSelected)="onSelectedOpt($event)" [label_text]="'language_select'|translate" [options]="options"></app-generic-select>
+  </div>
+
+    <!-- <div class="nav-container">
+      <a href="#" class="nav-logo">Logo</a>
+      <ul class="nav-menu">
+        <li class="nav-menu-item"><a href="#" class="nav-menu-link">Home</a></li>
+        <li class="nav-menu-item"><a href="#" class="nav-menu-link">Games</a></li>
+        <li class="nav-menu-item"><a href="#" class="nav-menu-link">Shop</a></li>
+        <li class="nav-menu-item"><a href="#" class="nav-menu-link">Support</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" (click)="toggleMobileMenu()">
+        <span class="nav-mobile-toggle-icon"></span>
+      </button>
+    </div>
+    <ul class="nav-mobile-menu" [ngClass]="{'open': isMobileMenuOpen}">
+      <li class="nav-menu-item"><a href="#" class="nav-menu-link">Home</a></li>
+      <li class="nav-menu-item"><a href="#" class="nav-menu-link">Games</a></li>
+      <li class="nav-menu-item"><a href="#" class="nav-menu-link">Shop</a></li>
+      <li class="nav-menu-item"><a href="#" class="nav-menu-link">Support</a></li>
+    </ul> -->
+  </nav>
+  

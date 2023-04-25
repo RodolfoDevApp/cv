@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font size and font family for the body */
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+/* CSS */
+
+.row {
+    display: flex;
+    padding: 1em;
+    gap: 2em;
+  }
+  
+  .row > * {
+    flex: 1;
+  }
+  
+ 
+/* Column container */
+.column-container {
+  display: flex;
+  flex-direction: column; /* Set flex direction to row */
+}
+
+/* Column styles */
+.column {
+  flex: 1; /* Set flex to 1 to divide the width equally among columns */
+  padding: 16px; /* Add padding for spacing between columns */
+
+}
+
+/* Example column classes for different column heights */
+.column-1 {
+  width: 100%; /* Full height column */
+}
+
+.column-2 {
+  width:75%; /* Set flex basis to 75% for 3/4 width */
+}
+
+.column-3 {
+  width: 50%;
+}
+
+.column-4 {
+  width: 30%;
+}
+
+/* Navbar styles */
+.windows98 .nav-container {
+  background-color: #d8e5e9;
+  color: #fff;
+}
+
+/* Container styles */
+.windows98 .container {
+  background-color: #514c4c;
+  color: #000;
+}
+
+/* Footer styles */
+.windows98 .footer {
+  background-color: #808080;
+  color: #fff;
+  padding: 0 3em 0 3em;
+  text-align: end;
+}
+/* Navbar styles */
+.nintendo .navbar {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+/* Container styles */
+.nintendo .container {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Footer styles */
+.nintendo .footer {
+  background-color: #8b0000;
+  color: #fff;
+}
+

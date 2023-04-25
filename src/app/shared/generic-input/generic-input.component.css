@@ -1,0 +1,51 @@
+.input-container {
+    position: relative;
+    margin-top: 30px;
+    /* Add margin to create space for the moving placeholder */
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999;
+    /* Add a bottom border for the input field */
+    outline: none;
+    background-color: transparent;
+    /* Set the background color to transparent */
+}
+
+.input-label {
+    position: absolute;
+    top: 10px;
+    /* Set the initial position of the label */
+    left: 10px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    opacity: 0.5;
+}
+
+.move-label {
+    top: -20px;
+    /* Move the label to the top when the input field has a value */
+    left: 10px;
+    font-size: 12px;
+    /* Shrink the font size of the label when it moves to the top */
+    opacity: 1;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+
+.currency-Symbol {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    color: #000;
+  }
+.currency-input {
+   text-align: right;
+  }

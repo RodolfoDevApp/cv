@@ -1,0 +1,157 @@
+.navbar {
+    background-color: #b4aa9e;
+    height: 5vh;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 2em 1em;
+  }
+  
+  .nav-logo {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu-item {
+    margin-left: 16px;
+  }
+  
+  .nav-menu-link {
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu-link:hover {
+    color: #ffdb58;
+  }
+  
+  .nav-mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
+  }
+  
+  .nav-mobile-toggle-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #d50000;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  
+  .nav-mobile-toggle-icon:before,
+  .nav-mobile-toggle-icon:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .nav-mobile-toggle-icon:before {
+    top: 15%;
+  }
+  
+  .nav-mobile-toggle-icon:after {
+    top: 85%;
+  }
+  
+  .nav-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-mobile-menu.open {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+    display: none;
+    }
+    
+    .nav-mobile-toggle {
+    display: block;
+    }
+    
+    .nav-mobile-menu {
+    display: none;
+    background-color: #ff8c00;
+    padding: 16px;
+    }
+    
+    .nav-mobile-menu.open {
+    display: block;
+    }
+    
+    .nav-mobile-menu .nav-menu-item {
+    margin-bottom: 16px;
+    }
+    
+    .nav-mobile-menu .nav-menu-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+    
+    .nav-mobile-menu .nav-menu-link:hover {
+    color: #ffdb58;
+    }
+    
+    .nav-mobile-toggle-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #d50000;
+    position: relative;
+    transform: rotate(45deg);
+    padding: 10px;
+    border-radius: 50%;
+    }
+    
+    .nav-mobile-toggle-icon:before,
+    .nav-mobile-toggle-icon:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+    .nav-mobile-toggle-icon:before {
+    top: 15%;
+    }
+    
+    .nav-mobile-toggle-icon:after {
+    top: 85%;
+    }
+    }  

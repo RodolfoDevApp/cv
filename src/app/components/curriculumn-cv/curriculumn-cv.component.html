@@ -1,0 +1,107 @@
+<div class="cv" #content>
+    <div class="header">
+        <h1 class="name">{{name}}</h1>
+        <p class="title">{{'Profession' | translate}}: <br>{{'title' | translate}}</p>
+        <p class="email">{{'e-mail' | translate}}: <br>{{'email' | translate}}</p>
+        <p class="phone">{{'phone_text' | translate}}: <br>{{'phone' | translate}}</p>
+        <p class="address">{{'address_text' | translate}}: <br> {{'address' | translate}}</p>
+    </div>
+
+    <div class="content">
+        <div class="Summary"> 
+            <h2>{{'Summary' | translate}}</h2><br>
+            <p>{{'summary' | translate}}</p>
+
+        </div>
+        <div class="skills">
+            <h2>Frameworks</h2><br>
+            <ul>
+                <li *ngFor="let Framework of Frameworks">{{Framework}}</li>
+            </ul><br>
+            <h2>{{'Languages' | translate}}</h2><br>
+            <ul>
+                <li *ngFor="let language of languages">{{language}}</li>
+            </ul><br>
+            <h2>{{'Tools' | translate}}</h2><br>
+            <ul>
+                <li *ngFor="let tool of tools">{{tool}}</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h2>{{'Experience' | translate}}</h2><br>
+            <!-- <div *ngFor="let experience of experiences">
+                <h3>{{experience.title | translate}}</h3>
+                <p>{{experience.company | translate}} - {{experience.location | translate}}</p>
+                <p>{{experience.date | translate}}</p>
+                <ul>
+                    <li *ngFor="let responsibility of experience.responsibilities">{{responsibility | translate}}</li>
+                </ul>
+            </div> -->
+            <div>
+                <h3>{{'experience_1_job' | translate}}</h3>
+                <p>{{'experience_1_compañy' | translate}}</p>
+                <p>{{'experience_1_location' | translate}}</p>
+                <p>{{'experience_1_years' | translate}}</p>
+                <p>{{'experience_1_responsibilities' | translate}}</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <h3>{{'experience_2_job' | translate}}</h3>
+                <p>{{'experience_2_compañy' | translate}}</p>
+                <p>{{'experience_2_location' | translate}}</p>
+                <p>{{'experience_2_years' | translate}}</p>
+                <p>{{'experience_2_responsibilities' | translate}}</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <h3>{{'experience_3_job' | translate}}</h3>
+                <p>{{'experience_3_compañy' | translate}}</p>
+                <p>{{'experience_3_location' | translate}}</p>
+                <p>{{'experience_3_years' | translate}}</p>
+                <p>{{'experience_3_responsibilities' | translate}}</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <h3>{{'experience_4_job' | translate}}</h3>
+                <p>{{'experience_4_compañy' | translate}}</p>
+                <p>{{'experience_4_location' | translate}}</p>
+                <p>{{'experience_4_years' | translate}}</p>
+                <p>{{'experience_4_responsibilities' | translate}}</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <h3>{{'experience_5_job' | translate}}</h3>
+                <p>{{'experience_5_compañy' | translate}}</p>
+                <p>{{'experience_5_location' | translate}}</p>
+                <p>{{'experience_5_years' | translate}}</p>
+                <p>{{'experience_5_responsibilities' | translate}}</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+        </div>
+        <div class="education">
+            <h2>{{'Education' | translate}}</h2><br>
+            <div>
+                <h3>{{'education_degree' | translate}}</h3>
+                <p>{{'education_school' | translate}}</p>
+                <p>{{'education_location' | translate}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="floating-button" cdkDrag
+(click)="downloadPDF()"
+     (cdkDragMoved)="onDragMoved($event)">
+     <div class="download-icon"></div>
+</div>

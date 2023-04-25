@@ -1,0 +1,7 @@
+<div class="tooltip" [ngClass]="{'tooltip-bottom': position === 'bottom', 'tooltip-top': position === 'top', 'tooltip-right': position === 'right', 'tooltip-left': position === 'left'}">
+    <ng-content select="[appTooltipTrigger]"></ng-content>
+    <span class="tooltiptext">
+      <ng-content select="[appTooltipContent]"></ng-content>
+    </span>
+  </div>
+  

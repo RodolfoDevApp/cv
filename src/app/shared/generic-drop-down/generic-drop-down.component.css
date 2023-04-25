@@ -1,0 +1,64 @@
+/* Dropdown button */
+.dropbtn {
+    position: relative;
+    background-color: #f9f9f9;
+    color: #333;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Arrow icon */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%) rotate(0deg); /* Initial rotation angle */
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  /* Rotate arrow 180 degrees when dropdown is open */
+  .arrow-up {
+    transform: translateY(-50%) rotate(180deg); /* Updated rotation angle */
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Show dropdown content when dropdown is open */
+  .show {
+    display: block;
+  }
+  
+  /* Dropdown columns */
+  .dropdown-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Dropdown options */
+  .dropdown-option {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Style for hover effect on dropdown options */
+  .dropdown-option:hover {
+    background-color: #e0e0e0;
+  }
+  

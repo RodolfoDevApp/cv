@@ -1,0 +1,6 @@
+<div class="input-container" [ngClass]="inputClass">
+    <input [type]="inputType" id="myInput" class="input-field" [class.currency-input]="inputType === 'currency'" [(ngModel)]="inputValue" (input)="onInputChange($event)" (keydown)="onKeyDown($event)"/>
+    <label for="myInput" class="input-label" [class.move-label]="inputValue !== ''">{{labelInput}}</label>
+    <label *ngIf="inputType === 'currency'" for="myInput" class="currency-Symbol">{{currencySimbol}}</label>
+</div>
+  
