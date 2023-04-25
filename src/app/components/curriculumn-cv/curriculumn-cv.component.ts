@@ -27,7 +27,7 @@ export class CurriculumnCvComponent {
   const pdf = new jsPDF('p', 'mm', 'a4');
   const options = {
     background: 'white',
-    scale: 1
+    scale: 2
   };
 
   html2canvas(content, options).then(canvas => {
@@ -52,7 +52,7 @@ export class CurriculumnCvComponent {
     for (let i = 1; i <= pageCount; i++) {
       pdf.setPage(i);
       pdf.setFontSize(10);
-      pdf.text(`need other language? -> https://rodolfodevapp.github.io/cv/#/cv`, pdf.internal.pageSize.getWidth() , pdf.internal.pageSize.getHeight() - 10);
+      pdf.text(`need other language? -> https://rodolfodevapp.github.io/cv/#/cv`, pdf.internal.pageSize.getWidth() -150 , pdf.internal.pageSize.getHeight() -5 );
     }
 
     pdf.save('cvMarban.pdf');
