@@ -143,3 +143,40 @@
   border-radius: 8px 8px 0 0;
   background-color: rgb(206, 59, 59);
 } */
+@media only screen and (max-width: 768px) {
+  .cv {
+    width: 100%;
+    /* margin: 2.5em auto 0 auto; */
+    font-family: Arial, sans-serif;
+    min-height:90vh;
+  }
+  .content {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5em;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "skills"
+    "Summary"
+    "education"
+    "experience";
+  }
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    /* border-radius: 1em; */
+    gap: .5em;
+    /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); */
+    display: grid;
+    grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "name" 
+    "title"
+    "phone"
+    "email"
+    "address";
+  }
+}
