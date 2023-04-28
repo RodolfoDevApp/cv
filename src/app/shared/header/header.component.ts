@@ -22,6 +22,7 @@ export class HeaderComponent {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
     this.loadTranslation();
+    this.onSelectedOpt('en');
   }
 
   // Function to toggle themes

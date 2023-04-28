@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./generic-select.component.css']
 })
 export class GenericSelectComponent {
-  selectedOption: string = '';
+  @Input() selectedOption: string = '';
   @Output() optionSelected = new EventEmitter<string>();
   @Input()  options = [
     { value: 'option1', label: 'Option 1' },

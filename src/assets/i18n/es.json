@@ -1,16 +1,17 @@
 {
     "language_select": "Cambiar idioma",
     "title": "Desarrollador de software",
+    "tools":"Herramientas",
     "email": "marbanappdev@gmail.com",
     "phone": "777 133 17 01",
     "address": "Cuernavaca Morelos, Mexico.",
     "summary": "Soy un desarrollador de software con experiencia en la creación de aplicaciones escalables y de alta calidad.",
-    "Profession": "Profesión",
-    "e-mail": "Correo",
-    "phone_text": "Teléfono",
-    "address_text": "Dirección",
+    "Profession": "Profesión: ",
+    "e-mail": "Correo: ",
+    "phone_text": "Teléfono: ",
+    "address_text": "Dirección: ",
     "Summary": "Resumen",
-    "Languages": "Lenguajes de programación",
+    "Languages": "Lenguajes de\n programación",
     "Experience": "Experiencia",
     "Education": "Educación ",
     "experience_1_job": "full stack developer",
@@ -40,6 +41,7 @@
     "experience_5_years": "2 años",
     "education_degree": "Ingeniero TI",
     "education_school": "Universidad Emiliano Zapata",
-    "education_location": "Emiliano Zapata, Morelos, Mexico"
+    "education_location": "Emiliano Zapata, Morelos, Mexico",
+    "not_you_language":"Need english version? click me"
 }
   

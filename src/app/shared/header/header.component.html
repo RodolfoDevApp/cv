@@ -1,6 +1,6 @@
 <nav class="navbar" [ngClass]="{'windows98': isWindows98Theme, 'nintendo': isNintendoTheme}">
   <div class="nav-container">
-    <app-generic-select (optionSelected)="onSelectedOpt($event)" [label_text]="'language_select'|translate" [options]="options"></app-generic-select>
+    <app-generic-select (optionSelected)="onSelectedOpt($event)" [selectedOption]="'en'" [label_text]="'language_select'|translate" [options]="options"></app-generic-select>
   </div>
 
     <!-- <div class="nav-container">
