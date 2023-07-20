@@ -4,15 +4,18 @@ import { CurriculumnCvComponent } from './curriculumn-cv/curriculumn-cv.componen
 import { MainComponent } from './main/main.component';
 import { StoryBookComponent } from './story-book/story-book.component';
 import { GenericPageNotFoundComponent } from '../shared/generic-page-not-found/generic-page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path:'',
     component: MainComponent,
     children: [
+
+      { path: 'home', component: HomeComponent },
       { path: 'cv', component: CurriculumnCvComponent },
       { path: 'story', component: StoryBookComponent },
-      { path: '**',  redirectTo: 'cv', pathMatch: 'full'}
+      { path: '**',  redirectTo: 'home', pathMatch: 'full'}
     ]
   },
 ];

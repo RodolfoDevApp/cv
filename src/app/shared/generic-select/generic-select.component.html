@@ -1,7 +1,6 @@
 <div class="select-wrapper" (click)="toggleDropdown()">
     <label class="select-label" [class.active]="selectedOption !== ''">{{label_text}}</label>
     <select class="select" [(ngModel)]="selectedOption" (change)="SelectedOpt()">
-      <option value="" disabled selected></option>
       <option *ngFor="let option of options" [value]="option.value">{{option.label}}</option>
     </select>
     <span class="select-arrow" [class.rotate]="isSelectActive"></span>

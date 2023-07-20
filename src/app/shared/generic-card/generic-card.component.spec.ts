@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GenericDancerComponent } from './generic-dancer.component';
+import { GenericCardComponent } from './generic-card.component';
 
-describe('GenericDancerComponent', () => {
-  let component: GenericDancerComponent;
-  let fixture: ComponentFixture<GenericDancerComponent>;
+describe('GenericCardComponent', () => {
+  let component: GenericCardComponent;
+  let fixture: ComponentFixture<GenericCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GenericDancerComponent ]
+      declarations: [ GenericCardComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GenericDancerComponent);
+    fixture = TestBed.createComponent(GenericCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

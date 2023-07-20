@@ -10,11 +10,12 @@ import { FooterComponent } from './footer/footer.component';
 import { GenericTooltipComponent } from './generic-tooltip/generic-tooltip.component';
 import { FormsModule } from '@angular/forms';
 import { GenericSelectComponent } from './generic-select/generic-select.component';
-import { GenericDancerComponent } from './generic-dancer/generic-dancer.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { GenericPageNotFoundComponent } from './generic-page-not-found/generic-page-not-found.component';
+import { GenericButtonComponent } from './generic-button/generic-button.component';
+import { GenericCardComponent } from './generic-card/generic-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { GenericPageNotFoundComponent } from './generic-page-not-found/generic-p
     GenericModalComponent, 
     HeaderComponent, 
     FooterComponent, 
-    GenericTooltipComponent, GenericSelectComponent, GenericDancerComponent, GenericPageNotFoundComponent,
+    GenericTooltipComponent, GenericSelectComponent, GenericPageNotFoundComponent, GenericButtonComponent, GenericCardComponent,
   ],
   imports: [
     CommonModule,
@@ -50,7 +51,7 @@ import { GenericPageNotFoundComponent } from './generic-page-not-found/generic-p
     GenericModalComponent, 
     HeaderComponent, 
     FooterComponent, 
-    GenericTooltipComponent, CurrencyPipe, GenericSelectComponent,GenericDancerComponent,TranslateModule,GenericPageNotFoundComponent
+    GenericTooltipComponent, CurrencyPipe, GenericSelectComponent,TranslateModule,GenericPageNotFoundComponent,GenericButtonComponent,GenericCardComponent
   ],
   providers:[
     CurrencyPipe

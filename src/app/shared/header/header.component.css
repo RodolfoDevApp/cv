@@ -1,157 +1,83 @@
 .navbar {
-    background-color: #b4aa9e;
-    height: 5vh;
+    width: 100vw;
+    background: linear-gradient(135deg, hsla(210, 74%, 42%, 0.988), #507da9fc,#3c7ab3fc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
   }
   
   .nav-container {
     display: flex;
-    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 2em 1em;
+    width: 15vw;
+    color: aliceblue;
   }
-  
-  .nav-logo {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .nav-menu {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-menu-item {
-    margin-left: 16px;
-  }
-  
-  .nav-menu-link {
-    color: #fff;
-    padding: 8px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-menu-link:hover {
-    color: #ffdb58;
-  }
-  
-  .nav-mobile-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 0;
-  }
-  
-  .nav-mobile-toggle-icon {
+
+.even_space{
+  display: flex;
+  width: 80vw;
+  gap: 5rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px 0 20px;
+}
+
+.nav-icon{
+  width: 40vw;
+  display: none;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.hamburger-icon {
+  align-self: flex-end;
+  position: relative;
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #d50000;
-    position: relative;
-    transform: rotate(45deg);
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+    transition: transform 0.3s; /* Add a smooth transition to the transform property */
+
+}
+.hamburger-icon::before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 0px;
+  width: 100%;
+  border-top: 0.2em solid #fff;
+  transition: transform 0.3s; /* Add a smooth transition to the transform property */
+
+}
+.hamburger-icon.active {
+  transform: rotate(45deg);
+  border-top: 0;
+
+}
+
+.hamburger-icon.active::before {
+  transform: rotate(90deg) translate(-.4em, 0em);
+}
+
+@media (max-width: 768px) {
+.logo{
+  width: 50vw;
+}
+  .even_space{
+    display: none;
   }
-  
-  .nav-mobile-toggle-icon:before,
-  .nav-mobile-toggle-icon:after {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .nav-mobile-toggle-icon:before {
-    top: 15%;
-  }
-  
-  .nav-mobile-toggle-icon:after {
-    top: 85%;
-  }
-  
-  .nav-mobile-menu {
+  .nav-icon{
     display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
-  
-  .nav-mobile-menu.open {
-    display: block;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-menu {
-    display: none;
-    }
-    
-    .nav-mobile-toggle {
-    display: block;
-    }
-    
-    .nav-mobile-menu {
-    display: none;
-    background-color: #ff8c00;
-    padding: 16px;
-    }
-    
-    .nav-mobile-menu.open {
-    display: block;
-    }
-    
-    .nav-mobile-menu .nav-menu-item {
-    margin-bottom: 16px;
-    }
-    
-    .nav-mobile-menu .nav-menu-link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    }
-    
-    .nav-mobile-menu .nav-menu-link:hover {
-    color: #ffdb58;
-    }
-    
-    .nav-mobile-toggle-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #d50000;
-    position: relative;
-    transform: rotate(45deg);
-    padding: 10px;
-    border-radius: 50%;
-    }
-    
-    .nav-mobile-toggle-icon:before,
-    .nav-mobile-toggle-icon:after {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
-    
-    .nav-mobile-toggle-icon:before {
-    top: 15%;
-    }
-    
-    .nav-mobile-toggle-icon:after {
-    top: 85%;
-    }
-    }  
+
+}

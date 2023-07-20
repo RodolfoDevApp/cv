@@ -9,7 +9,7 @@
     top: 10px; /* Adjust label position as needed */
     left: 10px; /* Adjust label position as needed */
     font-size: 16px; /* Adjust label font size as needed */
-    color: #666; /* Adjust label color as needed */
+    color: #000000!important; /* Adjust label color as needed */
     transition: all 0.3s ease; /* Add transition effect for smooth animation */
     pointer-events: none; /* Disable pointer events on the label */
     z-index: 1;
@@ -18,14 +18,15 @@
   .select-label.active {
     top: -10px; /* Adjust label position when option is selected */
     font-size: 10px; /* Adjust label font size when option is selected */
-    color: #333; /* Adjust label color when option is selected */
+    color: #000000; /* Adjust label color when option is selected */
   }
   
   .select {
     appearance: none;
+    color: #000000;
     outline: none;
     border: none;
-    background-color: #f8f8f8;
+    /* background-color: #ee1b1b!important; */
     padding: 10px;
     font-size: 16px;
     width: 200px; /* Set width as needed */
@@ -33,12 +34,16 @@
     background: transparent;
   appearance: none;
   z-index: 2; /* Set a lower z-index to make sure the select is below the pseudo-element */
-
+    
 }
-.select::-ms-expand {
-    display: none;
-  }
 
+/* .select::-ms-expand {
+    display: none;
+  } */
+
+  .select option{
+    margin-top: 10px;
+  }
   
   .select-arrow.rotate {
     transform: rotate(180deg);
@@ -52,7 +57,7 @@
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #666;
+    border-top: 5px solid #f9f0f0;
     transition: transform 0.3s ease;
   }
 /*   

@@ -1,10 +1,10 @@
-<div class="dropdown" (click)="toggleDropdown()">
-    <button class="dropbtn">
-        Dropdown <span class="arrow" [ngClass]="{'arrow-up': isDropdownOpen}"></span>
+<div class="dropbtn" (click)="toggleDropdown()">
+    <button class="custom-button" >
+        {{label_text}} <span class="arrow" [ngClass]="{'arrow-up': isDropdownOpen}"></span>
     </button>
     <div class="dropdown-content" [ngClass]="{'show': isDropdownOpen}">
       <div class="dropdown-column">
-        <a *ngFor="let option of options; let i = index;" href="" class="dropdown-option" (click)="onOptionSelected($event, option)">{{option}}</a>
+        <a *ngFor="let option of options; let i = index;" href="" class="dropdown-option" (click)="onOptionSelected($event, option.value)" [class.selected]="option.value === selectedOpt">{{option.label}}</a>
     </div>
     </div>
   </div>

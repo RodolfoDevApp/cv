@@ -1,0 +1,111 @@
+.flip-card {
+    perspective: 1000px;
+    /* Add 3D perspective */
+    width: 30vw;
+    /* Set the width of the flip card */
+    height: 30vh;
+    /* Set the height of the flip card */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    text-align: center;
+    transition: transform 0.6s;
+    /* Add a transition effect */
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    /* Flip the card on hover */
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    backface-visibility: hidden;
+    /* Hide the back of the card */
+
+}
+
+.flip-card-front {
+    /* background-color: #ece8e8; */
+}
+
+.flip-card-back {
+    /* background-color: #e0e0e0; */
+    transform: rotateY(180deg);
+}
+
+/* Styling for front and back content */
+.flip-card h2,
+.flip-card p {
+    margin: 0;
+    padding: 20px;
+}
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.img-card {
+    width: 15vw;
+    height: 20vh;
+    object-fit: contain;
+    border-radius: 20px;
+
+}
+@media (max-width: 768px) {
+    .flip-card {
+        perspective: 1000px;
+        /* Add 3D perspective */
+        width: 100vw;
+        /* Set the width of the flip card */
+        height: 30vh;
+        /* Set the height of the flip card */
+    }
+
+    .flip-card-inner {
+        width: 100vw;
+        height: 30vh;
+    }
+
+
+    .flip-card-front,
+    .flip-card-back {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .card-wrapper {
+
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .img-wrapper {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .img-card {
+        width: 100vw;
+        height: 30vh;
+    }
+
+}

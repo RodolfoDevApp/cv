@@ -3,8 +3,6 @@ import { CdkDragMove } from '@angular/cdk/drag-drop';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
 import { TranslateService } from '@ngx-translate/core';
-// import html2canvas from 'html2canvas';
-// import autoTable from 'jspdf-autotable';
 
 @Component({
   selector: 'app-curriculumn-cv',
@@ -53,7 +51,7 @@ export class CurriculumnCvComponent {
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(30);
     doc.setFont("helvetica", "bold"); // set font and font style
-    doc.text('Rodolfo Marba', 5, 15);
+    doc.text('Rodolfo Marban', 5, 15);
     doc.text('Estrada', 5, 25);
     
     //normal font
@@ -200,38 +198,6 @@ export class CurriculumnCvComponent {
 
     doc.save('Marban-cv.pdf');
 
-
-    // const options = {
-    //   background: 'white',
-    //   scale: 2
-    // };
-
-    // html2canvas(content, options).then(canvas => {
-    //   const imgData = canvas.toDataURL('image/png');
-    //   const imgProps = pdf.getImageProperties(imgData);
-    //   const pdfWidth = pdf.internal.pageSize.getWidth();
-    //   const pdfHeight = pdf.internal.pageSize.getHeight() - 20;;
-
-    //   let position = 0;
-    //   pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, pdfHeight);
-
-    //   while (pdfHeight > position) {
-    //     position += pdf.internal.pageSize.getHeight();
-    //     if (position < pdfHeight) {
-    //       pdf.addPage();
-    //       pdf.addImage(imgData, 'PNG', 0, -position, pdfWidth, pdfHeight);
-    //     }
-    //   }
-
-    //   // Add footer to every page
-    //   const pageCount = pdf.getNumberOfPages();
-    //   for (let i = 1; i <= pageCount; i++) {
-    //     pdf.setPage(i);
-    //     pdf.setFontSize(10);
-    //     pdf.text(`need other language? -> https://rodolfodevapp.github.io/cv/#/cv`, pdf.internal.pageSize.getWidth() -150 , pdf.internal.pageSize.getHeight() -5 );
-    //   }
-
-    //   pdf.save('cvMarban.pdf');
     // });
   }
 

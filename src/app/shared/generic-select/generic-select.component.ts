@@ -15,9 +15,9 @@ export class GenericSelectComponent {
   isSelectActive:boolean=false;
 
   SelectedOpt() {
-    console.log('Selected Option:', this.selectedOption);
-    this.optionSelected.emit(this.selectedOption); // Emit selected option to parent component
+    this.optionSelected.emit(this.selectedOption);
   }
+  
   toggleDropdown() {
     this.isSelectActive = !this.isSelectActive;
   }

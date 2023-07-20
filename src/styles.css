@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-* {
+html, body,* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Set font size and font family for the body */
@@ -52,41 +53,79 @@ body {
 .column-4 {
   width: 30%;
 }
-
-/* Navbar styles */
-.windows98 .nav-container {
-  background-color: #d8e5e9;
-  color: #fff;
+/* Primary Button */
+.primary-button {
+  background-color: #007bff!important;
+  color: #ffffff;
 }
 
-/* Container styles */
-.windows98 .container {
-  background-color: #514c4c;
-  color: #000;
+.primary-button:hover {
+  background-color: #0056b3;
 }
 
-/* Footer styles */
-.windows98 .footer {
-  background-color: #808080;
-  color: #fff;
-  padding: 0 3em 0 3em;
-  text-align: end;
-}
-/* Navbar styles */
-.nintendo .navbar {
-  background-color: #ff8c00;
-  color: #fff;
+/* Success Button */
+.success-button {
+  background-color: #28a745;
+  color: #ffffff;
 }
 
-/* Container styles */
-.nintendo .container {
-  background-color: #000;
-  color: #fff;
+.success-button:hover {
+  background-color: #1c7430;
 }
 
-/* Footer styles */
-.nintendo .footer {
-  background-color: #8b0000;
-  color: #fff;
+/* Warning Button */
+.warning-button {
+  background-color: #ffc107;
+  color: #000000;
 }
 
+.warning-button:hover {
+  background-color: #cc9900;
+}
+
+/* Danger Button */
+.danger-button {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.danger-button:hover {
+  background-color: #a52836;
+}
+
+/* header button*/
+.button-header {
+  background-color: transparent;
+  border: none;  color: #ffffff;
+  transition: background-color 0.3s ease;
+  /* height: 16vh; */
+  font-size: large;
+}
+
+.button-header:hover {
+  background-color: #0b2296;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  /* *{
+    font-size: 100px;
+  } */
+  .button{
+    color: #000000;
+    width: 100vw;
+    background-color: darkgray;
+    font-size: 40px;
+  }
+  .button-header:hover {
+    background-color:azure;
+  }
+}

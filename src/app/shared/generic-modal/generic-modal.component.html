@@ -1,1 +1,6 @@
-<p>generic-modal works!</p>
+<div class="modal" [ngClass]="{'show': showModal}">
+    <div class="modal-content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  

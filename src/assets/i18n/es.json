@@ -42,6 +42,25 @@
     "education_degree": "Ingeniero TI",
     "education_school": "Universidad Emiliano Zapata",
     "education_location": "Emiliano Zapata, Morelos, Mexico",
-    "not_you_language":"Need english version? click me"
+    "not_you_language":"Pagina de muestra",
+    "components":"Componentes",
+    "CV":"Bajar CV",
+    "about_me_p1":"Soy un desarrollador web apasionado y hábil con un gran amor por crear experiencias intuitivas y fáciles de usar. Mi viaje en el desarrollo web comenzó hace varios años, y desde entonces, he estado en un camino de aprendizaje emocionante y satisfactorio.",
+    "about_me_p2":"Me especializo en tecnologías front-end como HTML, CSS y JavaScript, y disfruto convirtiendo conceptos de diseño en sitios web totalmente funcionales y receptivos. Mi atención al detalle, creatividad y habilidades para resolver problemas me permiten ofrecer soluciones web de alta calidad y visualmente atractivas.",
+    "about_me_p3":"Además del desarrollo front-end, estoy bien versado en tecnologías de back-end como dot Net core, lo que me permite construir aplicaciones web robustas y escalables. Tengo experiencia trabajando con bases de datos y API RESTful para garantizar una comunicación fluida entre los componentes front-end y back-end.",
+    "about_me_p4":"Mi compromiso con el aprendizaje continuo me mantiene actualizado con las últimas tendencias de la industria y las mejores prácticas. Siempre estoy ansioso por asumir nuevos desafíos y colaborar con equipos diversos para crear experiencias digitales innovadoras.",
+    "about_me_p5":"Cuando no estoy programando, puedes encontrarme explorando nuevos lugares, leyendo blogs de tecnología o disfrutando de tiempo de calidad con mi familia y amigos. Creo en el poder de la tecnología para tener un impacto positivo, y estoy emocionado de ser parte de la comunidad de desarrollo web en constante evolución.",
+    "about_me_saluto":"Hola, yo soy:",
+    "skill_text1":"Competente en el diseño y optimización de esquemas de bases de datos, escritura de consultas SQL complejas y administración del rendimiento de la base de datos. Experiencia en el uso de características como procedimientos almacenados, desencadenadores e índices.",
+    "skill_text2":"Fuerte dominio sobre el desarrollo de aplicaciones web robustas y escalables con .NET Core 3 framework. Experto en la creación de API RESTful, la implementación de autenticación y autorización, y el trabajo con Entity Framework Core para las interacciones de bases de datos.",
+    "skill_text3":"Competente en el desarrollo de aplicaciones front-end modernas y receptivas utilizando el marco Angular. Experiencia en la creación de componentes, servicios y módulos, la implementación de enrutamiento y administración de estados, y la integración con API de back-end.",
+    "main_skill_text":"Habilidades Principales",
+    "experience_text":"Experiencia.",
+    "experience_text_p1":"Desarrollé y mantuve bases de datos de SQL Server, optimizé el rendimiento de las consultas y garanticé la integridad de los datos.",
+    "experience_text_p2":"Implementé aplicaciones web de .NET Core 3, incluidas API RESTful y servicios back-end, con C# y Entity Framework Core.",
+    "experience_text_p3":"Creé interfaces de usuario interactivas con Angular, aprovechando la arquitectura basada en componentes y la programación reactiva.",
+    "contact_text":"Contáctame:",
+    "contact_text_p":"Por favor, descargue mi CV para obtener información de contacto.",
+    "additional_skill_text":"Habilidades adicionales"
 }
   

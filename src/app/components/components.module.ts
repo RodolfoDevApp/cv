@@ -8,10 +8,11 @@ import { StoryBookComponent } from './story-book/story-book.component';
 import { CurriculumnCvComponent } from './curriculumn-cv/curriculumn-cv.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TranslateModule } from '@ngx-translate/core';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
-  declarations: [MainComponent, StoryBookComponent, CurriculumnCvComponent],
+  declarations: [MainComponent, StoryBookComponent, CurriculumnCvComponent, HomeComponent],
   imports: [
     CommonModule,
     ComponentsRoutingModule,

@@ -1,0 +1,19 @@
+<div class="card-wrapper">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <!-- Front content -->
+                <div class="img-wrapper">
+                    <img class="img-card"
+                        [src]="srcImg"
+                        alt="some awesome 404 img">
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <!-- Back content -->
+                <h2>{{'experience_text' | translate}}</h2>
+                <p>{{ referenceText | translate}}</p>
+            </div>
+        </div>
+    </div>
+</div>
