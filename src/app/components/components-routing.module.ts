@@ -5,6 +5,7 @@ import { MainComponent } from './main/main.component';
 import { StoryBookComponent } from './story-book/story-book.component';
 import { GenericPageNotFoundComponent } from '../shared/generic-page-not-found/generic-page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { GameComponent } from './game/game.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'cv', component: CurriculumnCvComponent },
       { path: 'story', component: StoryBookComponent },
+      { path: 'game', component: GameComponent },
       { path: '**',  redirectTo: 'home', pathMatch: 'full'}
     ]
   },

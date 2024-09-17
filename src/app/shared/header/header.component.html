@@ -1,18 +1,23 @@
 <nav class="navbar">
   <div class="nav-container">
-    <div class="logo">
-      Some awesome LOGO
+    <div class="logo center_v_h">
+      {{languaje==='en'? 'Name':'Nombre'}}: Rodolfo Marban Estrada
     </div>
-    <div class="even_space">
-      <app-generic-drop-down (optionSelected)="onSelectedOpt($event)" [selectedOption]="languaje"
-        [label_text]="'language_select'|translate" [options]="options"></app-generic-drop-down>
+    <div class="even_space center_v_h">
+      <div class="idioma_container center_v_h">
+        <app-generic-drop-down (optionSelected)="onSelectedOpt($event)" [selectedOption]="languaje"
+          [label_text]="'language_select'|translate" [options]="options">
+        </app-generic-drop-down>
         <span style="color: aliceblue;">{{languaje==='en'? 'English':'Español'}}</span>
-        <button class="button button-header" (click)="btnComponents()">{{'components'|translate}}</button>
-        <button class="button button-header" (click)="btnHome()">{{'home'|translate}}</button>
-        <button class="button button-header" (click)="btnCV()">{{'CV'|translate}}</button>
       </div>
+      <div class="no_move center_v_h">
+        <button style="width: 100%; height: 100%;" class="button button-header" (click)="btnComponents()">{{'components'|translate}}</button>
+        <button style="width: 100%; height: 100%;" class="button button-header" (click)="btnHome()">{{'home'|translate}}</button>
+        <button style="width: 100%; height: 100%;" class="button button-header" (click)="btnCV()">{{'CV'|translate}}</button>
+      </div>
+    </div>
       <div class="nav-icon" (click)="clicked = !clicked">
-      <span style="color: aliceblue; margin-right:15px;position: absolute;top:.2rem; right: 2rem;">{{languaje==='en'? 'English':'Español'}}</span>
+      <span style="color: #6b7277; margin-right:15px;position: absolute;top:.2rem; right: 2rem;">{{languaje==='en'? 'English':'Español'}}</span>
       <div [class.active]="clicked" class="hamburger-icon"></div>
     </div>
   </div>

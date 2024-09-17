@@ -6,11 +6,18 @@
     min-height: 100vh;
     overflow: hidden;
     flex-direction: column;
-    background-color: rgb(207, 224, 233);
+    position: relative;
 }
 
 .container{
     max-height: 87.5vh;
     overflow: auto;
 }
+
+.foota{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 

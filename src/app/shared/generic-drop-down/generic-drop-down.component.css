@@ -1,8 +1,8 @@
 /* Dropdown button */
 .dropbtn {
     position: relative;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #6b7277;
+    color: #e9e4e4;
     border: none;
     padding: 10px 30px 10px 15px;
     font-size: 16px;
@@ -20,7 +20,7 @@
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid #333;
+    border-top: 6px solid #f7f6f6;
     transition: transform 0.2s ease-in-out; /* Add transition for smooth animation */
   }
   
@@ -66,10 +66,13 @@
   /* Style for hover effect on dropdown options */
   .dropdown-option:hover {
     background-color: #e0e0e0;
+    border-radius: 20px;
   }
   .dropdown-column a.selected {
     background-color: #786d6d;
     color: #e0e0e0;
+    border-radius: 20px;
+
   }
   .custom-button {
     background-color: transparent; /* Transparent background color */

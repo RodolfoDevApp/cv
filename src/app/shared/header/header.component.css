@@ -1,30 +1,28 @@
 .navbar {
-    width: 100vw;
-    background: linear-gradient(135deg, hsla(210, 74%, 42%, 0.988), #507da9fc,#3c7ab3fc);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    width: 100%;
+    /* background: linear-gradient(135deg, hsla(209, 23%, 71%, 0.988), #161b20fc,#677c91fc); */
+    box-shadow: 0 4px 8px #6b7277;
+    /* padding: 1rem; */
+    background: #212a32;
+
   }
   
   .nav-container {
     display: flex;
-    width: 100vw;
+    width: 100%;
+    height: 3.5rem;
   }
 
   .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15vw;
+    width: 40%;
     color: aliceblue;
+    background: #384148;
   }
 
 .even_space{
-  display: flex;
-  width: 80vw;
-  gap: 5rem;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 10px 0 20px;
+  width: 80%;
+  gap: 1rem;
+  background-color: #212a32;
 }
 
 .nav-icon{
@@ -67,6 +65,13 @@
 
 .hamburger-icon.active::before {
   transform: rotate(90deg) translate(-.4em, 0em);
+}
+.idioma_container{
+  height: 100%;
+  background: #6b7277;
+  gap: 1rem;
+  padding: 0 10px 0 0;
+  width: 30%;
 }
 
 @media (max-width: 768px) {

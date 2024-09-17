@@ -18,7 +18,7 @@ export class CurriculumnCvComponent {
   }
   name: string = 'Rodolfo Marban Estrada';
   Frameworks: string[] = ['Angular', 'bootstrap', 'material', '.net core', 'asp'];
-  languages: string[] = ['javascript', 'c#', 'java', 'typescript'];
+  languages: string[] = ['javascript', 'c#', 'java', 'typescript', 'php'];
   tools: string[] = ['jira', 'git', 'github', 'visual studio code', 'visual studio 20xx'];
   positionLeft = '0';
   positionRight = '0';

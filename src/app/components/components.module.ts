@@ -9,10 +9,11 @@ import { CurriculumnCvComponent } from './curriculumn-cv/curriculumn-cv.componen
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TranslateModule } from '@ngx-translate/core';
 import { HomeComponent } from './home/home.component';
+import { GameComponent } from './game/game.component';
 
 
 @NgModule({
-  declarations: [MainComponent, StoryBookComponent, CurriculumnCvComponent, HomeComponent],
+  declarations: [MainComponent, StoryBookComponent, CurriculumnCvComponent, HomeComponent, GameComponent],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
