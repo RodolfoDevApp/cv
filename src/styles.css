@@ -9,7 +9,7 @@ html, body,* {
 /* Set font size and font family for the body */
 body {
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #0a151d;
   color: azure;
 }
@@ -27,19 +27,19 @@ body {
   
  /*paleta de colores*/
  .color_1{
-  color:#0a151d
+  background: #0a151d
  }
  .color_2{
-  color:#212a32
+  background: #212a32
  }
  .color_3{
-  color:#384148
+  background: #384148
  }
  .color_4{
-  color:#51595f
+  background: #51595f
  }
  .color_5{
-  color:#6b7277
+  background: #6b7277
  }
  
 /* Column container */

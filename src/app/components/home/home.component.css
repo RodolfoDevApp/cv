@@ -5,7 +5,7 @@
         "i   i   i"
         "sc sc sc"
         "s4 s4 s4";
-    gap: 10px;
+    gap: 15px;
     min-height: 88vh;
     min-width: 100%;
     max-width: 100%;
@@ -23,15 +23,15 @@
         "s2 s2 "
         "s3 s3 "
         "s5 s5 ";
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .grid-item {
     /* background-color: #f9f9f9; */
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* Add awesome shadow */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -55,7 +55,7 @@
     overflow: hidden;
 
     min-height: 45vh;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .sc {
@@ -65,7 +65,10 @@
 .title-main-skills {
     grid-area: tms;
 }
+.padding_10{
+   padding: 10px 10px 10px 10px!important;
 
+}
 .space1 {
     grid-area: s1;
 }
@@ -141,6 +144,7 @@ h2 {
 .force-row {
     display: flex;
     gap: 10px;
+    padding: 0!important;
 }
 
 .center-flex {
@@ -175,10 +179,7 @@ h2 {
     border: 1px solid #4c4645;
 }
 
-.title-skill {
-    top: 1rem;
-    position: absolute;
-}
+
 
 span,
 p {

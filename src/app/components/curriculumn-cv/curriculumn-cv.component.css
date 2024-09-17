@@ -48,6 +48,7 @@
     "skills Summary"
     "skills education"
     "skills experience";
+    color: #333;
   }
   .skills {
     grid-area: skills;
